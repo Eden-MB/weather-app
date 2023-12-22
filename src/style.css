@@ -1,17 +1,48 @@
 .body {
   max-width: 600px;
-  background-color: aqua;
   margin: 45px auto;
   border-radius: 8px;
   padding: 30px;
+  box-sizing: border-box;
+  background-image: url(src./sun-3588618_1280.jpg);
 }
 
 .header {
   border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
+  margin-top: 20px;
 }
 .main {
   padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .search {
+  padding: 15px 20px;
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  margin-left: 70px;
+}
+.submit {
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: white;
+  background-color: black;
+}
+
+img {
+  opacity: 0.7;
+  display: flex;
+  position: absolute;
+  shape-outside: none;
+}
+.daysoftheweek {
+  background-color: aquamarine;
+  padding: 20px;
+  position: relative;
 }
