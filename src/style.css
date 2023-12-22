@@ -1,0 +1,17 @@
+.body {
+  max-width: 600px;
+  background-color: aqua;
+  margin: 45px auto;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.header {
+  border-bottom: 1px solid #f9f7fe;
+  padding: 0 0 30px 0;
+}
+.main {
+  padding: 30px 0;
+}
+.search {
+}
