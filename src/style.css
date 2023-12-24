@@ -48,7 +48,7 @@ body {
 .hey {
   position: relative;
   display: inline-flex;
-  left: 17%;
+  left: 21%;
   top: 6%;
 }
 
@@ -61,17 +61,18 @@ body {
   text-shadow: 2px 2px 8px #070420;
   position: relative;
   bottom: 8%;
-  left: 18%;
+  left: 25%;
 }
 .cityname {
   color: white;
-  text-decoration: solid;
   display: flex;
   letter-spacing: 0.4px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 35px;
+  font-size: 40px;
   position: relative;
   left: 10px;
+  bottom: 20px;
+  padding: 10px;
 }
 .space {
   position: relative;
@@ -90,9 +91,12 @@ body {
   color: white;
   position: relative;
   left: 10px;
+  top: 10px;
 }
 .footer {
   color: white;
+  position: relative;
+  top: 10px;
 }
 a {
   color: #f7cf21;
@@ -113,6 +117,8 @@ table {
   font-size: 18px;
   border-color: 100px;
   color: white;
+  position: relative;
+  top: 15px;
 }
 td {
   display: table-cell;
@@ -139,4 +145,8 @@ td {
 .fri {
   display: block;
   margin: auto;
+}
+.haha {
+  text-align: justify;
+  margin: 0px;
 }
