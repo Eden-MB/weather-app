@@ -1,10 +1,16 @@
+body {
+  background-color: rgb(245, 242, 242);
+}
+
 .body {
   max-width: 600px;
   margin: 45px auto;
   border-radius: 8px;
   padding: 30px;
   box-sizing: border-box;
-  background-image: url(src./sun-3588618_1280.jpg);
+  background-image: url(sun-3588618_1280.jpg);
+  background-position: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
 }
 
 .header {
@@ -19,11 +25,12 @@
 }
 .search {
   padding: 15px 20px;
-  width: 60%;
+  width: 70%;
   border-radius: 10px;
   border: none;
   font-size: 17px;
-  margin-left: 70px;
+  margin-left: 28px;
+  border-style: ;
 }
 .submit {
   padding: 15px 30px;
@@ -32,17 +39,58 @@
   margin-left: 5px;
   border-radius: 6px;
   color: white;
-  background-color: black;
+  background-color: rgb(86, 140, 172);
+  font-weight: bold;
 }
 
-img {
-  opacity: 0.7;
-  display: flex;
-  position: absolute;
-  shape-outside: none;
-}
-.daysoftheweek {
-  background-color: aquamarine;
-  padding: 20px;
+.hey {
   position: relative;
+  display: inline-flex;
+  left: 17%;
+}
+
+.celcius {
+  font-size: 80px;
+  font-weight: bold;
+  display: inline-flex;
+  color: white;
+  text-shadow: 50%;
+  text-shadow: 2px 2px 8px #070420;
+  position: relative;
+  bottom: 15%;
+  left: 18%;
+}
+.cityname {
+  color: white;
+  text-decoration: solid;
+  display: flex;
+  letter-spacing: 0.4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  position: relative;
+  left: 10px;
+}
+.space {
+  position: relative;
+  bottom: 10%;
+}
+.cc {
+  position: relative;
+  top: 15px;
+  font-size: 30px;
+  display: inline-flex;
+}
+.weather-app-details strong {
+  color: #f7cf21;
+}
+.ya {
+  color: white;
+  position: relative;
+  left: 10px;
+}
+.footer {
+  color: white;
+}
+a {
+  color: #f7cf21;
 }
