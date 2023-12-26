@@ -4,7 +4,22 @@ function searchCity(event) {
   let city = searchInput.value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1a2b7258ebd456c01aef9175dfe8b709&units=metric`;
   axios.get(apiUrl).then(showCity);
-  console.log(apiUrl);
+  const date = new Date();
+  const minutes = date.getMinutes();
+  const hours = date.getHours();
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wedenesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const day = days[date.getDay()];
+  console.log(day);
+  let dateAndTime = document.querySelector("#dateTime");
+  dateAndTime.innerHTML = `${day} ${hours}:${minutes},`;
 }
 let form = document.querySelector("#searchCity");
 form.addEventListener("submit", searchCity);
