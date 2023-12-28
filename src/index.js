@@ -2,7 +2,8 @@ function searchCity(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#input");
   let city = searchInput.value;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1a2b7258ebd456c01aef9175dfe8b709&units=metric`;
+  let apiKey = "b2a5adcct04b33178913oc335f405433";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(showCity);
   const date = new Date();
   const minutes = date.getMinutes();
@@ -17,23 +18,32 @@ function searchCity(event) {
     "Saturday",
   ];
   const day = days[date.getDay()];
-  console.log(day);
+
   let dateAndTime = document.querySelector("#dateTime");
   dateAndTime.innerHTML = `${day} ${hours}:${minutes},`;
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
 }
 let form = document.querySelector("#searchCity");
 form.addEventListener("submit", searchCity);
 
 function showCity(response) {
   let temperatureID = document.querySelector("#temperature");
-  let temperature = Math.round(response.data.main.temp);
+  let temperature = Math.round(response.data.temperature.current);
   let cityElement = document.querySelector("#cityName");
-  cityElement.innerHTML = response.data.name;
+  cityElement.innerHTML = response.data.city;
   temperatureID.innerHTML = temperature;
+  let cc = document.querySelector(".cc");
   let humidity = document.querySelector("#humidity");
-  humidity.innerHTML = response.data.main.humidity;
+  humidity.innerHTML = `${response.data.temperature.humidity}%`;
   let describe = document.querySelector("#describe");
-  describe.innerHTML = response.data.weather[0].description;
+  describe.innerHTML = response.data.condition.description;
   let wind = document.querySelector("#wind");
-  wind.innerHTML = response.data.wind.speed;
+  wind.innerHTML = `${response.data.wind.speed}km/hr`;
+  let iconElement = document.querySelector(".hey");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="hey" />`;
 }

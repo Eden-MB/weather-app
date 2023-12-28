@@ -8,10 +8,11 @@ body {
   border-radius: 8px;
   padding: 30px;
   box-sizing: border-box;
-  background-image: url(sun-3588618_1280.jpg);
   background-position: center;
+  background-image: url(sun-3588618_1280.jpg);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
 }
+/*background-image: url(sun-3588618_1280.jpg);*/
 
 .header {
   border-bottom: 1px solid #f9f7fe;
@@ -49,20 +50,21 @@ body {
 .hey {
   position: relative;
   display: inline-flex;
-  left: 21%;
-  top: 13%;
+  left: 10%;
+  top: 10%;
 }
 
 .celcius {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: bold;
   display: inline-flex;
   justify-content: space-evenly;
   color: white;
   text-shadow: 50%;
-  text-shadow: 2px 2px 8px #070420;
+  font-family: sans-serif;
+  justify-content: center;
   position: relative;
-  left: 25%;
+  left: 20%;
   padding: 15px;
 }
 .cityname {
@@ -72,7 +74,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
   position: relative;
-  justify-content: space-evenly;
+  justify-content: center;
   left: 12px;
   bottom: 20px;
   padding: 10px;
@@ -83,9 +85,13 @@ body {
 }
 .cc {
   position: relative;
-  top: 15px;
-  font-size: 30px;
+  bottom: 25px;
+  left: 35px;
+  font-size: 40px;
   display: inline-flex;
+  margin-top: 6px;
+  font-size: 28px;
+  color: white;
 }
 
 #wind {
