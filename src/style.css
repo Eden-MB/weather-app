@@ -55,7 +55,7 @@ body {
 }
 
 .celcius {
-  font-size: 60px;
+  font-size: 70px;
   font-weight: bold;
   display: inline-flex;
   justify-content: space-evenly;
@@ -85,7 +85,7 @@ body {
 }
 .cc {
   position: relative;
-  bottom: 27px;
+  bottom: 24px;
   left: 35px;
   font-size: 40px;
   display: inline-flex;
