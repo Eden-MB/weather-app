@@ -50,7 +50,7 @@ body {
 .hey {
   position: relative;
   display: inline-flex;
-  left: 10%;
+  left: 6%;
   top: 10%;
 }
 
@@ -85,7 +85,7 @@ body {
 }
 .cc {
   position: relative;
-  bottom: 25px;
+  bottom: 27px;
   left: 35px;
   font-size: 40px;
   display: inline-flex;
